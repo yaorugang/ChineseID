@@ -13,8 +13,24 @@
     tools:context="net.yaorugang.practice.chineseid.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <EditText
+        android:id="@+id/id_number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"/>
+
     <TextView
+        android:id="@+id/last_number_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_below="@+id/id_number_edit"
+        android:textStyle="bold"
+        android:text="Last Number is:"/>
+
+    <TextView
+        android:id="@+id/checksum_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_number_text"/>
 </RelativeLayout>
